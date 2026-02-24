@@ -1,16 +1,14 @@
-import json
-import csv
-import datetime as dt
-import json
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
-
-
-data=[]
-
 def read_json_to_dataframe(input_file):
+    """
+    Reads a json file into a padnas datafrane
+
+    Args:
+    input
+    
+    """
     print(f'Reading JSON file {input_file}')
     # Read the data from a JSON file into a Pandas dataframe
     eva_df = pd.read_json(input_file, convert_dates=['date'], encoding='ascii')
